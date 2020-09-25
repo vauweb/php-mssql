@@ -3,5 +3,8 @@ RewriteEngine On
 RewriteCond domain/%{SERVER_NAME}%{REQUEST_URI} -f
 RewriteRule ^(.*)$ domain/%{SERVER_NAME}/$1 [L,QSA]
 
+RewriteCond domain_sample/%{SERVER_NAME}%{REQUEST_URI} -f
+RewriteRule ^(.*)$ domain_sample/%{SERVER_NAME}/$1 [L,QSA]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php [L,QSA]

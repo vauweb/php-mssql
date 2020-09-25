@@ -1,2 +1,2 @@
 <?php
-echo "Каталог ".getenv("SERVER_NAME./")." ненаиден";
+    echo "Каталог ".getenv("SERVER_NAME")." ненаиден";
