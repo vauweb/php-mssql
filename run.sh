@@ -1,0 +1,1 @@
+sudo docker run --rm -p 80:80 winkman/php-mssql

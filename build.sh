@@ -1,0 +1,1 @@
+sudo docker build --pull -t winkman/php-mssql .
