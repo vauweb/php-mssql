@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  php-mssql:
+    image: winkman/php-mssql:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./public:/var/www/html
+      - ./public/domain:/var/www/html/domain
