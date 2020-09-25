@@ -13,6 +13,7 @@ RUN a2enmod headers rewrite \
     && pecl install sqlsrv \
     && pecl install pdo_sqlsrv \
     && docker-php-ext-install pdo_mysql \
+    && docker-php-ext-enable sqlsrv pdo_sqlsrv \
     && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
 
 
