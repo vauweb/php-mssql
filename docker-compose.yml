@@ -1,6 +1,7 @@
 version: "3.8"
 services:
   php-mssql:
+    restart: always
     image: winkman/php-mssql:latest
     ports:
       - "80:80"
